@@ -50,7 +50,8 @@ var sensitivity = 100;
 
 function textResize (distance) {
   var value = 1.2*((distance + sensitivity) / (20 + sensitivity));
-  $('#rd').css('transform', 'scale(' + value + ')');
+  console.log(value);
+  // $('#rd').css('transform', 'scale(' + value + ')');
 }
 
 
