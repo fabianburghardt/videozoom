@@ -36,7 +36,7 @@ document.addEventListener('headtrackingEvent',
   function (event) {
     /*original object*/
     // console.log(event);
-    console.log(event.z);
+    // console.log(event.z);
     textResize(event.z);
 
   }
@@ -50,7 +50,7 @@ var sensitivity = 100;
 
 function textResize (distance) {
   var value = 1.2*((distance + sensitivity) / (20 + sensitivity));
-  $("#rd").css("width",value);
+  console.log(value);
 }
 
 
