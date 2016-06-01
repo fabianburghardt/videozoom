@@ -45,15 +45,12 @@ document.addEventListener('headtrackingEvent',
 
 
 // TEXT RESIZE
-var textfield = document.getElementById('text');
+
 var sensitivity = 100;
 
 function textResize (distance) {
   var value = 1.2*((distance + sensitivity) / (20 + sensitivity));
-  // console.log(distance);
-  var newEm = value + "em";
-  // console.log(newEm);
-  document.getElementById('text').style.fontSize = newEm;
+  $("#rd").css("width",value);
 }
 
 
